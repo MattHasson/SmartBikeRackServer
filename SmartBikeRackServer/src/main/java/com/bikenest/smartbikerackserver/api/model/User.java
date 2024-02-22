@@ -1,4 +1,4 @@
-package com.example.smartbikerackserver.api.model;
+package com.bikenest.smartbikerackserver.api.model;
 
 public class User {
 

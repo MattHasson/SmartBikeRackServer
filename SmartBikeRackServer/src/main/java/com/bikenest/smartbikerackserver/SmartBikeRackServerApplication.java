@@ -1,4 +1,4 @@
-package com.example.smartbikerackserver;
+package com.bikenest.smartbikerackserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
