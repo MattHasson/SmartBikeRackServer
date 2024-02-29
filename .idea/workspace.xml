@@ -6,13 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="e920a46b-a75d-414b-af59-2b3a5f1b93bd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/SmartBikeRackServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SmartBikeRackServer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartBikeRackServer/src/main/java/com/example/smartbikerackserver/SmartBikeRackServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/SmartBikeRackServer/src/main/java/com/bikenest/smartbikerackserver/SmartBikeRackServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartBikeRackServer/src/main/java/com/example/smartbikerackserver/api/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SmartBikeRackServer/src/main/java/com/bikenest/smartbikerackserver/api/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartBikeRackServer/src/main/java/com/example/smartbikerackserver/api/model/Apartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/SmartBikeRackServer/src/main/java/com/bikenest/smartbikerackserver/api/model/Apartment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartBikeRackServer/src/main/java/com/example/smartbikerackserver/api/model/Process.java" beforeDir="false" afterPath="$PROJECT_DIR$/SmartBikeRackServer/src/main/java/com/bikenest/smartbikerackserver/api/model/Process.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartBikeRackServer/src/main/java/com/example/smartbikerackserver/api/model/Rack.java" beforeDir="false" afterPath="$PROJECT_DIR$/SmartBikeRackServer/src/main/java/com/bikenest/smartbikerackserver/api/model/Rack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartBikeRackServer/src/main/java/com/example/smartbikerackserver/api/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/SmartBikeRackServer/src/main/java/com/bikenest/smartbikerackserver/api/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartBikeRackServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SmartBikeRackServer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartBikeRackServer/src/main/java/com/bikenest/smartbikerackserver/SmartBikeRackServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/SmartBikeRackServer/src/main/java/com/bikenest/smartbikerackserver/SmartBikeRackServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartBikeRackServer/src/main/java/com/bikenest/smartbikerackserver/api/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SmartBikeRackServer/src/main/java/com/bikenest/smartbikerackserver/api/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartBikeRackServer/src/main/java/com/bikenest/smartbikerackserver/api/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/SmartBikeRackServer/src/main/java/com/bikenest/smartbikerackserver/api/model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,40 +28,71 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2c4RdAKeTYsydnMbDWHXLyyACTE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/scrum/Desktop/Programs/SpringExample&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.SmartBikeRackServerApplication.executor": "Run",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/scrum/Desktop/Programs/SpringExample",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SmartBikeRackServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="SmartBikeRackServer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bikenest.smartbikerackserver.SmartBikeRackServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-19.0.2-corretto-19.0.2-4caba194b151-48ba4555" />
+        <option value="jdk-19.0.2-corretto-19.0.2-4caba194b151-be841094" />
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-322ed176" />
       </set>
     </attachedChunks>
   </component>
@@ -79,6 +109,7 @@
       <workItem from="1708581721375" duration="618000" />
       <workItem from="1708630604813" duration="2452000" />
       <workItem from="1708633338399" duration="294000" />
+      <workItem from="1709172561999" duration="4543000" />
     </task>
     <servers />
   </component>

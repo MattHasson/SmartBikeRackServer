@@ -8,12 +8,12 @@ public class User {
     private String password;
     private int apartment_id;
 
-    public User(int id, String first_name, String last_name, String password, int apartment_id) {
-        this.id = id;
-        this.first_name = first_name;
-        this.last_name = last_name;
-        this.password = password;
-        this.apartment_id = apartment_id;
+    public User(User user) {
+        this.id = user.id;
+        this.first_name = user.first_name;
+        this.last_name = user.last_name;
+        this.password = user.password;
+        this.apartment_id = user.apartment_id;
     }
     public User() {
         this.id = 0;
