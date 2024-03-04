@@ -5,13 +5,27 @@ public class User {
     private int id;
     private String first_name;
     private String last_name;
+
+
+
+    private String username;
     private String password;
     private int apartment_id;
+
+    public User(int id, String first_name, String last_name, String username, String password, int apartment_id) {
+        this.id = id;
+        this.first_name = first_name;
+        this.last_name = last_name;
+        this.username = username;
+        this.password = password;
+        this.apartment_id = apartment_id;
+    }
 
     public User(User user) {
         this.id = user.id;
         this.first_name = user.first_name;
         this.last_name = user.last_name;
+        this.username = user.username;
         this.password = user.password;
         this.apartment_id = user.apartment_id;
     }
@@ -19,6 +33,7 @@ public class User {
         this.id = 0;
         this.first_name = null;
         this.last_name = null;
+        this.username = null;
         this.password = null;
         this.apartment_id = 0;
     }
@@ -42,6 +57,14 @@ public class User {
     }
     public String getLast_name() {
         return last_name;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public void setPassword(String password) {
