@@ -1,13 +1,13 @@
-package com.example.smartbikerackserver;
+package com.bikenest.bikerackserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SmartBikeRackServerApplication {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SmartBikeRackServerApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 }

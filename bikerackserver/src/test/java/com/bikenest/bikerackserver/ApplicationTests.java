@@ -1,10 +1,10 @@
-package com.example.smartbikerackserver;
+package com.bikenest.bikerackserver;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SmartBikeRackServerApplicationTests {
+class ApplicationTests {
 
 	@Test
 	void contextLoads() {
