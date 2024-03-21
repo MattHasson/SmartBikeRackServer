@@ -1,5 +1,5 @@
 package com.bikenest.bikerackserver.repository;
-
+/*
 import com.bikenest.bikerackserver.model.User;
 import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Repository;
@@ -47,3 +47,4 @@ public class UserCollectionRepository {
     }
 
 }
+*/
