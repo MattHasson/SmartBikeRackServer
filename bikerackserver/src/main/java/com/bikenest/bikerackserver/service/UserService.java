@@ -3,7 +3,10 @@ package com.bikenest.bikerackserver.service;
 import com.bikenest.bikerackserver.model.User;
 import com.bikenest.bikerackserver.repository.UserRepository;
 import org.springframework.data.jpa.repository.Modifying;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.client.HttpClientErrorException;
 
 import java.util.List;
 import java.util.Optional;
@@ -28,14 +31,18 @@ public class UserService {
         return userRepository.findAll();
     }
 
-    @Modifying
-    public void updateUser(int id, User user) throws Exception{
+    public void updateUser(int id, User user) {
         //Put update code in here, probably something with finding by ID then saving
+        user.setId(id);
+        userRepository.save(user);
     }
 
     public void deleteUserById(int id) {
         userRepository.deleteById(id);
     }
 
+    public Boolean existsByUsername(String u) {
+        return userRepository.existsByUsername(u);
+    }
 
 }

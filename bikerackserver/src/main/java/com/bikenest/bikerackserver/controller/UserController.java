@@ -20,25 +20,42 @@ public class UserController {
         this.userService = userService;
     }
 
+    @ResponseStatus(value = HttpStatus.NOT_FOUND)
+    public class ResourceNotFoundException extends RuntimeException {}
+
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    public class InvalidRequestBodyException extends RuntimeException {}
+
+
     @GetMapping("")
     public List<User> getAllUsers() {
         return userService.getAllUsers();
     }
 
     @GetMapping("/{id}")
-    public Optional<User> getById(@PathVariable int id) {
-        return userService.getUserById(id);
+    public Optional<User> getById(@PathVariable int id) throws ResourceNotFoundException {
+        if (userService.getUserById(id).isEmpty()) throw new ResourceNotFoundException();
+        else return userService.getUserById(id);
     }
 
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping("")
     public void postUser(@Valid @RequestBody User u) {
-        userService.postUser(u);
+        if (userService.existsByUsername(u.getUsername())) throw new InvalidRequestBodyException();
+        else userService.postUser(u);
     }
 
     @PutMapping("/{id}")
-    public void putUser(@PathVariable int id, @Valid @RequestBody User u) {
-        userService.updateUser(u);
+    public void putUser(@PathVariable int id, @Valid @RequestBody User u) throws Exception {
+        if (userService.getUserById(id).isEmpty()) throw new ResourceNotFoundException();
+        else if (userService.existsByUsername(u.getUsername())) throw new InvalidRequestBodyException();
+        else userService.updateUser(id, u);
+    }
+
+    @DeleteMapping("/{id}")
+    public void deleteUser(@PathVariable int id) {
+        if (userService.getUserById(id).isEmpty()) throw new ResourceNotFoundException();
+        else userService.deleteUserById(id);
     }
 
     /*

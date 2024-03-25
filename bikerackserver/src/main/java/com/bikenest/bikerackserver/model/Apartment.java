@@ -1,9 +1,7 @@
 package com.bikenest.bikerackserver.model;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Data
 @Entity
@@ -13,14 +11,28 @@ import lombok.NoArgsConstructor;
 public class Apartment {
     @Id
     @GeneratedValue
+    @Getter
+    @Setter
     @Column(name = "ID")
     private int id;
+
+    @Getter
+    @Setter
     @Column(name = "APARTMENT_NAME")
     private String apartmentName;
+
+    @Getter
+    @Setter
     @Column(name = "STREET_ADDRESS")
     private String street_address;
+
+    @Getter
+    @Setter
     @Column(name = "CITY")
     private String city;
+
+    @Getter
+    @Setter
     @Column(name = "ZIP")
     private String zip;
 }
