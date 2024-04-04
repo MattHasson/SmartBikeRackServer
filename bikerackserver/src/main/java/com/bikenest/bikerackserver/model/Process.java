@@ -36,12 +36,12 @@ public class Process {
     @Getter
     @Setter
     @Column(name = "TIME_START")
-    LocalDateTime time_start;
+    long time_start;
 
     @Getter
     @Setter
     @Column(name = "TIME_END")
-    LocalDateTime time_end;
+    long time_end;
 
 
 }

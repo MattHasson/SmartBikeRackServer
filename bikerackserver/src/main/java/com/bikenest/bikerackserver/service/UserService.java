@@ -19,8 +19,8 @@ public class UserService {
         this.userRepository = userRepository;
     }
 
-    public void postUser(User user) {
-        userRepository.save(user);
+    public User postUser(User user) {
+        return userRepository.save(user);
     }
 
     public Optional<User> getUserById(int id) {
@@ -31,10 +31,10 @@ public class UserService {
         return userRepository.findAll();
     }
 
-    public void updateUser(int id, User user) {
+    public User updateUser(int id, User user) {
         //Put update code in here, probably something with finding by ID then saving
         user.setId(id);
-        userRepository.save(user);
+        return userRepository.save(user);
     }
 
     public void deleteUserById(int id) {

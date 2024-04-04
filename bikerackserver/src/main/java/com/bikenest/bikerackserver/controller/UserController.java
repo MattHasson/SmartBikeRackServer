@@ -40,16 +40,16 @@ public class UserController {
 
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping("")
-    public void postUser(@Valid @RequestBody User u) {
+    public User postUser(@Valid @RequestBody User u) {
         if (userService.existsByUsername(u.getUsername())) throw new InvalidRequestBodyException();
-        else userService.postUser(u);
+        else return userService.postUser(u);
     }
 
     @PutMapping("/{id}")
-    public void putUser(@PathVariable int id, @Valid @RequestBody User u) throws Exception {
+    public User putUser(@PathVariable int id, @Valid @RequestBody User u) throws Exception {
         if (userService.getUserById(id).isEmpty()) throw new ResourceNotFoundException();
         else if (userService.existsByUsername(u.getUsername())) throw new InvalidRequestBodyException();
-        else userService.updateUser(id, u);
+        else return userService.updateUser(id, u);
     }
 
     @DeleteMapping("/{id}")

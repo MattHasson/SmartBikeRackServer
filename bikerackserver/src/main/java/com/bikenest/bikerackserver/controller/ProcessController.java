@@ -2,6 +2,7 @@ package com.bikenest.bikerackserver.controller;
 
 import com.bikenest.bikerackserver.model.Process;
 import com.bikenest.bikerackserver.service.ProcessService;
+import com.bikenest.bikerackserver.service.RackService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -36,14 +37,14 @@ public class ProcessController {
 
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping("")
-    public void postProcess(@Valid @RequestBody Process p) {
-        processService.postProcess(p);
+    public Process postProcess(@Valid @RequestBody Process p) {
+        return processService.postProcess(p);
     }
 
     @PutMapping("/{id}")
-    public void putProcess(@PathVariable int id, @Valid @RequestBody Process p) throws Exception {
+    public Process putProcess(@PathVariable int id, @Valid @RequestBody Process p) throws Exception {
         if (processService.getProcessById(id).isEmpty()) throw new ResourceNotFoundException();
-        else processService.updateProcess(id, p);
+        else return processService.updateProcess(id, p);
     }
 
     @DeleteMapping("/{id}")

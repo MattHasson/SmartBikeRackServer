@@ -41,9 +41,9 @@ public class RackController {
     }
 
     @PutMapping("/{id}")
-    public void putRack(@PathVariable int id, @Valid @RequestBody Rack r) throws Exception {
+    public Rack putRack(@PathVariable int id, @Valid @RequestBody Rack r) throws Exception {
         if (rackService.getRackById(id).isEmpty()) throw new ResourceNotFoundException();
-        else rackService.updateRack(id, r);
+        else return rackService.updateRack(id, r);
     }
 
     @DeleteMapping("/{id}")

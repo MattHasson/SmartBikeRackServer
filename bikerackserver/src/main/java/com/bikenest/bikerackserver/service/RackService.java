@@ -27,9 +27,9 @@ public class RackService {
         return rackRepository.findAll();
     }
 
-    public void updateRack(int id, Rack rack) {
+    public Rack updateRack(int id, Rack rack) {
         rack.setId(id);
-        rackRepository.save(rack);
+        return rackRepository.save(rack);
     }
 
     public void deleteRackById(int id) {

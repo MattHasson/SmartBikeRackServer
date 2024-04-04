@@ -15,8 +15,8 @@ public class ProcessService {
         this.processRepository = processRepository;
     }
 
-    public void postProcess(Process process) {
-        processRepository.save(process);
+    public Process postProcess(Process process) {
+        return processRepository.save(process);
     }
 
     public Optional<Process> getProcessById(int id) {
@@ -27,9 +27,9 @@ public class ProcessService {
         return processRepository.findAll();
     }
 
-    public void updateProcess(int id, Process process) {
+    public Process updateProcess(int id, Process process) {
         process.setId(id);
-        processRepository.save(process);
+        return processRepository.save(process);
     }
 
     public void deleteProcessById(int id) {
